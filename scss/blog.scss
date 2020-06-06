@@ -1,0 +1,77 @@
+.page-title-wrapper {
+  background: #f5f5f5;
+  float: left;
+  padding: 15px;
+  margin: 0 0 30px;
+  width: 100%;
+  .page-title {
+    color: #000000;
+    float: left;
+    font: 500 18px/28px "Poppins", Helvetica, sans-serif;
+    letter-spacing: 0.4px;
+    margin: 0;
+    text-transform: uppercase;
+  }
+  .breadcrumb {
+    float: right;
+    line-height: 28px;
+    list-style: outside none none;
+    margin: 0;
+    padding: 0;
+    background-color: whitesmoke;
+    > li {
+      white-space: nowrap;
+      display: inline-block;
+    }
+    i {
+      font-size: 16px;
+      vertical-align: baseline;
+    }
+    a {
+      color: #232323;
+    }
+    i:hover {
+      color: #000;
+    }
+    > li + li:before {
+      color: #888888;
+      content: "\f105";
+      float: left;
+      font-family: "FontAwesome";
+      font-size: 13px;
+      margin: 0px 8px;
+    }
+  }
+}
+#module-otblog-category #otblogcat .blog-item .otblogpost {
+  display: flex;
+  padding-bottom: 30px;
+}
+@media (max-width: 767px) {
+  .breadcrumb {
+    float: none !important;
+    margin: 0 auto !important;
+    display: inline-block;
+  }
+  #module-otblog-category #otblogcat .blog-item .otblogpost {
+    display: block;
+  }
+}
+.blog-post .blog-detail-content .page-item-title {
+  margin: 0 0 10px;
+}
+.blog-post .blog-detail-content .blog-tool {
+  margin: 0 0 15px;
+}
+.blog-post .blog_image_holder {
+  padding: 0 0 20px;
+  float: left;
+  width: 100%;
+}
+.blog-post .blog-detail-content .page-item-title h1 {
+  font: 400 18px/20px "Poppins", Helvetica, sans-serif;
+  letter-spacing: 0;
+  text-transform: capitalize;
+  color: #333333;
+  margin: 0;
+}

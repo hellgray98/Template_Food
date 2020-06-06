@@ -1,0 +1,200 @@
+.product-block {
+  float: left;
+  width: 100%;
+  display: contents;
+}
+
+.thumbnails {
+  overflow: hidden !important;
+  clear: both;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.product-images .additional-images-container {
+  margin: 0 auto;
+  overflow: hidden;
+  direction: ltr;
+  position: relative;
+  width: 400px;
+}
+.additional-images-container {
+  .additional-images {
+    .item {
+      width: 87px;
+      height: 87px;
+    }
+  }
+}
+.thumbnails .products-carousel.additional-images {
+  float: left;
+  width: 100%;
+  margin-top: 7px;
+}
+.additional-images .image-additional {
+  border: 1px solid #e5e5e5;
+  display: block;
+  margin: 10px;
+  overflow: hidden;
+  padding: 0;
+  cursor: pointer;
+  text-align: center;
+}
+.products-carousel .owl-stage {
+  width: 870px;
+  height: 87px;
+}
+.product-options .product-quantity {
+  display: flex;
+}
+.product-quantity label {
+  padding: 10px 0;
+}
+.product-tabs {
+  background: #ffffff;
+  border: 1px solid #e5e5e5;
+  clear: both;
+  margin: 40px 0;
+  padding: 10px 20px 0;
+  .nav.nav-tabs {
+    border-bottom: 1px solid #ebebeb !important;
+    > li {
+      float: left;
+      position: relative;
+      margin: 0 5px;
+      > a {
+        background: none;
+        border: none;
+        color: #878787;
+        font: 400 16px/22px "Poppins", Helvetica, sans-serif;
+        margin: 0;
+        padding: 10px 0;
+        position: relative;
+        text-transform: capitalize;
+      }
+      > a.active {
+        ::before {
+          background: #000000 none repeat scroll 0 0;
+          bottom: 8px;
+          content: "";
+          height: 3px;
+          left: 0;
+          position: absolute;
+          right: 0;
+          width: 100%;
+        }
+      }
+    }
+    > li {
+      margin: 0 20px 0 0;
+    }
+    li.active a {
+      background: none;
+      border: none;
+      color: #000000;
+      cursor: pointer;
+    }
+  }
+  .tab-content {
+    padding: 20px 0;
+    margin: 0;
+  }
+  .tab-content {
+    padding: 15px 0;
+    width: 100%;
+  }
+}
+.nav-tabs .nav-link.active {
+  border-bottom: 3px solid #000000 !important; 
+  color: #000000 !important;
+}
+.product-tabs #tab-description > h3, .product-tabs #form-review > h2 {
+  font-family: "Poppins",Helvetica,sans-serif;
+font-size:18px;
+color:#777;
+}
+.box-heading > h3::after, .ot-titletab .title_block::after{
+  bottom: -1px !important;
+}
+.form-horizontal .form-group {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+#tab-review label.control-label {
+	font:500 13px/20px "Poppins",Helvetica,sans-serif;
+	color:#222;
+	margin-bottom:10px;
+}
+div.required .control-label:before {
+	content: '* ';
+	color: #F00;
+	font-weight: bold;
+}
+.product-details #button-cart {
+  background: #1b1b1b;
+  border-color: #1b1b1b;
+  color: #ffffff;
+  float: left;
+  font-family: "Poppins", Helvetica, sans-serif;
+  font-size: 14px;
+  letter-spacing: 1px;
+  line-height: 26px;
+  padding: 7px 15px 6px 48px;
+  position: relative;
+  text-transform: capitalize;
+}
+
+.product-details #button-cart::before {
+  background: rgba(0, 0, 0, 0) url("../../images/product-sprite.png") no-repeat
+    scroll -27px -45px;
+  content: "";
+  position: absolute;
+  width: 56px;
+  height: 35px;
+  left: 0;
+  right: auto;
+}
+.product-details #button-cart.btn-primary:hover,
+.product-product #button-cart.btn-primary:focus,
+.product-product #button-cart.btn-primary.active {
+    border-color: #ffd71b;
+	background: #ffd71b;
+	color: #000000;
+}
+.product-details #button-cart:hover::before,
+.product-details #button-cart:focus::before,
+.product-details #button-cart.active::before {
+	background-position: 16px -45px;
+}
+.additional-images-container
+  .additional-images.products-carousel
+  .owl-nav
+  > button.owl-prev {
+  left: 0;
+  right: auto;
+}
+.additional-images-container
+  .additional-images.products-carousel
+  .owl-nav
+  > button.owl-next {
+  right: 0;
+  left: auto;
+}
+@media (max-width: 1199px) and (min-width: 992px) {
+  .product-images .additional-images-container {
+    width: 175px !important;
+  }
+}
+@media(max-width:1024px){
+}
+@media (max-width: 1300px) {
+  .product-images .additional-images-container {
+    width: 330px;
+    
+  }
+}
+@media (max-width: 1499px) {
+  .product-images .additional-images-container {
+    width: 290px;
+  }
+}
